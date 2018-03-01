@@ -13,12 +13,12 @@ public class DataBase {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");// 第一步,加载类
 				//long start=System.currentTimeMillis();
-				conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/bookmanager?characterEncoding=utf8&useSSL=true","root","qq1996002008");//第二步，建立连接
+				conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/bookmanager?characterEncoding=utf8&useSSL=true","root","Zhy19960102");//第二步，建立连接
 				//long end=System.currentTimeMillis();
 				stmt=conn.createStatement();
 				//System.out.println(conn);
 				//System.out.println("耗时"+(end-start)+"ms");//建立连接是很耗时间的,后期会改用连接池来做
-				
+	
 				
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
